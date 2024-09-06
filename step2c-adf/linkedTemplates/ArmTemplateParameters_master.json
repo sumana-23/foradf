@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "step2c-adf"
+		},
+		"ls_AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"ls_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"ls_AzureSqlDatabase_password": {
+			"value": ""
+		},
+		"ls_blob_dest_connectionString": {
+			"value": ""
+		},
+		"ls_blob_destination_connectionString": {
+			"value": ""
+		},
+		"ls_sourcestep2c_connectionString": {
+			"value": ""
+		},
+		"ls_step2c_db_password": {
+			"value": ""
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://github.com"
+		},
+		"ls_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://step2cdl.dfs.core.windows.net/"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "step2cserver.database.windows.net"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "lab-2"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "sumana"
+		},
+		"ls_step2c_db_properties_typeProperties_server": {
+			"value": "step2cserver.database.windows.net"
+		},
+		"ls_step2c_db_properties_typeProperties_database": {
+			"value": "step2cdb"
+		},
+		"ls_step2c_db_properties_typeProperties_userName": {
+			"value": "sumana"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
