@@ -1,0 +1,22 @@
+{
+	"name": "ds_list_tbalenames",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_step2c_db",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblTableName"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

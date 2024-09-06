@@ -1,0 +1,57 @@
+{
+	"name": "ds_blob_customers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sourcestep2c",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Customers.csv",
+				"container": "mappingdataflowsourcedatasets"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": "Customerslastname",
+				"type": "String"
+			},
+			{
+				"name": "Customersfirstname",
+				"type": "String"
+			},
+			{
+				"name": "CustomersCountry",
+				"type": "String"
+			},
+			{
+				"name": "Customersage",
+				"type": "String"
+			},
+			{
+				"name": "Customersgender",
+				"type": "String"
+			},
+			{
+				"name": "Customersemail",
+				"type": "String"
+			},
+			{
+				"name": "Customersprofession",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

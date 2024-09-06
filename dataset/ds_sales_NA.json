@@ -1,0 +1,53 @@
+{
+	"name": "ds_sales_NA",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sourcestep2c",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sales_NA.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Employee_id",
+				"type": "String"
+			},
+			{
+				"name": "Sales_2018",
+				"type": "String"
+			},
+			{
+				"name": "Sales_2019",
+				"type": "String"
+			},
+			{
+				"name": "Sales_2020",
+				"type": "String"
+			},
+			{
+				"name": "Sales_2021",
+				"type": "String"
+			},
+			{
+				"name": "Sales_2022",
+				"type": "String"
+			},
+			{
+				"name": "Sales_2023",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
